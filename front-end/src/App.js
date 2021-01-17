@@ -11,11 +11,11 @@ function App() {
     password: "admin123"
   }
 
-  const { user, setUser } = useState({ name: '', email: '', password: '' });
+  const { user, setUser } = useState({ name: 'admin', email: 'admin@admin.com', password: 'admin123' });
   const [error, setError] = useState('');
   
   const Login = details => {
-    console.log(details);
+    console.log('details', details);
   }
   
   const Logout = () => {
@@ -30,6 +30,7 @@ function App() {
         </div>
       ): (
         <Row>
+          {Login()}
           <LoginForm />
         </Row>
       )}
