@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import { Form, Input, Button, Checkbox, Row } from 'antd';
 import LoginForm from './components/LoginForm';
 import '../src/index.css';
+import ApplicationsStatus from './components/ApplicationsStatus';
 
 function App() {
   const adminUser = {
@@ -31,7 +32,7 @@ function App() {
       ): (
         <Row>
           {Login()}
-          <LoginForm />
+          <ApplicationsStatus />
         </Row>
       )}
     </div>

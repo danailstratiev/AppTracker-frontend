@@ -66,7 +66,6 @@ export class ApplicationsStatus extends React.Component {
       </div>
     )
   }
-  }
 }
 
 export default ApplicationsStatus;
